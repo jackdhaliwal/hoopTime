@@ -1,0 +1,27 @@
+{
+
+    "peakhours": [
+        "5-8PM"
+    ], 
+    "rating": 
+        "Moderate", 
+
+    "hours": "7AM - 7PM", 
+
+    "description": "If you're just getting off of work and are looking to get some shots up in some solitude, Hawkins park provides a clean, well-maintained court with good grip for your outdoor sneakers.", 
+     
+    "id": "hawkins-park", 
+    "images": [
+        "img/phones/hawkins-park.0.jpg", 
+        "img/phones/hawkins-park.1.jpg"
+        
+    ], 
+    "name": "Hawkins Park", 
+
+    "address": " 2301 Bastona Dr, Elk Grove, CA 95758",
+    
+    "directions": {
+        "laguna": "left on harbour point, pass KFC, right on bastona drive", 
+        "eg": "right on harbour point, pass Arco, left on bastona drive"
+    }
+}
