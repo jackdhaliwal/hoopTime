@@ -1,0 +1,49 @@
+<div class="park-images">
+  <img ng-src="{{img}}" class="park"
+      ng-class="{selected: img === $ctrl.mainImageUrl}"
+      ng-repeat="img in $ctrl.park.images" />
+</div>
+
+<h1>{{$ctrl.park.name}}</h1>
+<h6>{{$ctrl.park.address}}</h6>
+
+<p>{{$ctrl.park.description}}</p>
+
+<ul class="park-thumbs">
+  <li ng-repeat="img in $ctrl.park.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Best time for runs: </span>
+    <dl>
+      <dt></dt>
+      <dd ng-repeat="peakhours in $ctrl.park.peakhours">{{peakhours}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>runRating:</span>
+    <dl>
+      <dd>{{$ctrl.park.rating}} </dd>
+    </dl>
+  </li>
+  <li>
+    <span>Directions:</span>
+    <dl>
+      <dt>From Elk Grove Blvd:</dt>
+      <dd>{{$ctrl.park.directions.eg}}</dd>
+      <br>
+      <dt>From Laguna Blvd:</dt>
+      <dd>{{$ctrl.park.directions.laguna}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Park Hours:</span>
+    <dl>
+      <dd>{{$ctrl.park.hours}}</dd>
+    </dl>
+  </li>
+
+</ul>

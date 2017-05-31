@@ -20378,8 +20378,8 @@ function $FilterProvider($provide) {
  *     The predicate can be negated by prefixing the string with `!`.
  *
  *   - `Object`: A pattern object can be used to filter specific properties on objects contained
- *     by `array`. For example `{name:"M", phone:"1"}` predicate will return an array of items
- *     which have property `name` containing "M" and property `phone` containing "1". A special
+ *     by `array`. For example `{name:"M", park:"1"}` predicate will return an array of items
+ *     which have property `name` containing "M" and property `park` containing "1". A special
  *     property name (`$` by default) can be used (e.g. as in `{$: "text"}`) to accept a match
  *     against any property of the object or its nested object properties. That's equivalent to the
  *     simple substring match with a `string` as described above. The special property name can be
@@ -20425,31 +20425,31 @@ function $FilterProvider($provide) {
  * @example
    <example name="filter-filter">
      <file name="index.html">
-       <div ng-init="friends = [{name:'John', phone:'555-1276'},
-                                {name:'Mary', phone:'800-BIG-MARY'},
-                                {name:'Mike', phone:'555-4321'},
-                                {name:'Adam', phone:'555-5678'},
-                                {name:'Julie', phone:'555-8765'},
-                                {name:'Juliette', phone:'555-5678'}]"></div>
+       <div ng-init="friends = [{name:'John', park:'555-1276'},
+                                {name:'Mary', park:'800-BIG-MARY'},
+                                {name:'Mike', park:'555-4321'},
+                                {name:'Adam', park:'555-5678'},
+                                {name:'Julie', park:'555-8765'},
+                                {name:'Juliette', park:'555-5678'}]"></div>
 
        <label>Search: <input ng-model="searchText"></label>
        <table id="searchTextResults">
-         <tr><th>Name</th><th>Phone</th></tr>
+         <tr><th>Name</th><th>park</th></tr>
          <tr ng-repeat="friend in friends | filter:searchText">
            <td>{{friend.name}}</td>
-           <td>{{friend.phone}}</td>
+           <td>{{friend.park}}</td>
          </tr>
        </table>
        <hr>
        <label>Any: <input ng-model="search.$"></label> <br>
        <label>Name only <input ng-model="search.name"></label><br>
-       <label>Phone only <input ng-model="search.phone"></label><br>
+       <label>park only <input ng-model="search.park"></label><br>
        <label>Equality <input type="checkbox" ng-model="strict"></label><br>
        <table id="searchObjResults">
-         <tr><th>Name</th><th>Phone</th></tr>
+         <tr><th>Name</th><th>park</th></tr>
          <tr ng-repeat="friendObj in friends | filter:search:strict">
            <td>{{friendObj.name}}</td>
-           <td>{{friendObj.phone}}</td>
+           <td>{{friendObj.park}}</td>
          </tr>
        </table>
      </file>
@@ -21594,12 +21594,12 @@ function sliceFn(input, begin, end) {
          <table class="friends">
            <tr>
              <th>Name</th>
-             <th>Phone Number</th>
+             <th>park Number</th>
              <th>Age</th>
            </tr>
            <tr ng-repeat="friend in friends | orderBy:'-age'">
              <td>{{friend.name}}</td>
-             <td>{{friend.phone}}</td>
+             <td>{{friend.park}}</td>
              <td>{{friend.age}}</td>
            </tr>
          </table>
@@ -21609,11 +21609,11 @@ function sliceFn(input, begin, end) {
        angular.module('orderByExample1', [])
          .controller('ExampleController', ['$scope', function($scope) {
            $scope.friends = [
-             {name: 'John',   phone: '555-1212',  age: 10},
-             {name: 'Mary',   phone: '555-9876',  age: 19},
-             {name: 'Mike',   phone: '555-4321',  age: 21},
-             {name: 'Adam',   phone: '555-5678',  age: 35},
-             {name: 'Julie',  phone: '555-8765',  age: 29}
+             {name: 'John',   park: '555-1212',  age: 10},
+             {name: 'Mary',   park: '555-9876',  age: 19},
+             {name: 'Mike',   park: '555-4321',  age: 21},
+             {name: 'Adam',   park: '555-5678',  age: 35},
+             {name: 'Julie',  park: '555-8765',  age: 29}
            ];
          }]);
      </file>
@@ -21668,8 +21668,8 @@ function sliceFn(input, begin, end) {
                <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
              </th>
              <th>
-               <button ng-click="sortBy('phone')">Phone Number</button>
-               <span class="sortorder" ng-show="propertyName === 'phone'" ng-class="{reverse: reverse}"></span>
+               <button ng-click="sortBy('park')">park Number</button>
+               <span class="sortorder" ng-show="propertyName === 'park'" ng-class="{reverse: reverse}"></span>
              </th>
              <th>
                <button ng-click="sortBy('age')">Age</button>
@@ -21678,7 +21678,7 @@ function sliceFn(input, begin, end) {
            </tr>
            <tr ng-repeat="friend in friends | orderBy:propertyName:reverse">
              <td>{{friend.name}}</td>
-             <td>{{friend.phone}}</td>
+             <td>{{friend.park}}</td>
              <td>{{friend.age}}</td>
            </tr>
          </table>
@@ -21688,11 +21688,11 @@ function sliceFn(input, begin, end) {
        angular.module('orderByExample2', [])
          .controller('ExampleController', ['$scope', function($scope) {
            var friends = [
-             {name: 'John',   phone: '555-1212',  age: 10},
-             {name: 'Mary',   phone: '555-9876',  age: 19},
-             {name: 'Mike',   phone: '555-4321',  age: 21},
-             {name: 'Adam',   phone: '555-5678',  age: 35},
-             {name: 'Julie',  phone: '555-8765',  age: 29}
+             {name: 'John',   park: '555-1212',  age: 10},
+             {name: 'Mary',   park: '555-9876',  age: 19},
+             {name: 'Mike',   park: '555-4321',  age: 21},
+             {name: 'Adam',   park: '555-5678',  age: 35},
+             {name: 'Julie',  park: '555-8765',  age: 29}
            ];
 
            $scope.propertyName = 'age';
@@ -21732,7 +21732,7 @@ function sliceFn(input, begin, end) {
        // Element locators
        var unsortButton = element(by.partialButtonText('unsorted'));
        var nameHeader = element(by.partialButtonText('Name'));
-       var phoneHeader = element(by.partialButtonText('Phone'));
+       var parkHeader = element(by.partialButtonText('park'));
        var ageHeader = element(by.partialButtonText('Age'));
        var firstName = element(by.repeater('friends').column('friend.name').row(0));
        var lastName = element(by.repeater('friends').column('friend.name').row(4));
@@ -21741,7 +21741,7 @@ function sliceFn(input, begin, end) {
          expect(firstName.getText()).toBe('Adam');
          expect(lastName.getText()).toBe('John');
 
-         phoneHeader.click();
+         parkHeader.click();
          expect(firstName.getText()).toBe('John');
          expect(lastName.getText()).toBe('Mary');
 
@@ -21800,8 +21800,8 @@ function sliceFn(input, begin, end) {
                <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
              </th>
              <th>
-               <button ng-click="sortBy('phone')">Phone Number</button>
-               <span class="sortorder" ng-show="propertyName === 'phone'" ng-class="{reverse: reverse}"></span>
+               <button ng-click="sortBy('park')">park Number</button>
+               <span class="sortorder" ng-show="propertyName === 'park'" ng-class="{reverse: reverse}"></span>
              </th>
              <th>
                <button ng-click="sortBy('age')">Age</button>
@@ -21810,7 +21810,7 @@ function sliceFn(input, begin, end) {
            </tr>
            <tr ng-repeat="friend in friends">
              <td>{{friend.name}}</td>
-             <td>{{friend.phone}}</td>
+             <td>{{friend.park}}</td>
              <td>{{friend.age}}</td>
            </tr>
          </table>
@@ -21820,11 +21820,11 @@ function sliceFn(input, begin, end) {
        angular.module('orderByExample3', [])
          .controller('ExampleController', ['$scope', 'orderByFilter', function($scope, orderBy) {
            var friends = [
-             {name: 'John',   phone: '555-1212',  age: 10},
-             {name: 'Mary',   phone: '555-9876',  age: 19},
-             {name: 'Mike',   phone: '555-4321',  age: 21},
-             {name: 'Adam',   phone: '555-5678',  age: 35},
-             {name: 'Julie',  phone: '555-8765',  age: 29}
+             {name: 'John',   park: '555-1212',  age: 10},
+             {name: 'Mary',   park: '555-9876',  age: 19},
+             {name: 'Mike',   park: '555-4321',  age: 21},
+             {name: 'Adam',   park: '555-5678',  age: 35},
+             {name: 'Julie',  park: '555-8765',  age: 29}
            ];
 
            $scope.propertyName = 'age';
@@ -21866,7 +21866,7 @@ function sliceFn(input, begin, end) {
        // Element locators
        var unsortButton = element(by.partialButtonText('unsorted'));
        var nameHeader = element(by.partialButtonText('Name'));
-       var phoneHeader = element(by.partialButtonText('Phone'));
+       var parkHeader = element(by.partialButtonText('park'));
        var ageHeader = element(by.partialButtonText('Age'));
        var firstName = element(by.repeater('friends').column('friend.name').row(0));
        var lastName = element(by.repeater('friends').column('friend.name').row(4));
@@ -21875,7 +21875,7 @@ function sliceFn(input, begin, end) {
          expect(firstName.getText()).toBe('Adam');
          expect(lastName.getText()).toBe('John');
 
-         phoneHeader.click();
+         parkHeader.click();
          expect(firstName.getText()).toBe('John');
          expect(lastName.getText()).toBe('Mary');
 
@@ -26153,7 +26153,7 @@ var ngCloakDirective = ngDirective({
  *      <ul>
  *        <li ng-repeat="contact in settings.contacts">
  *          <select ng-model="contact.type" aria-label="Contact method" id="select_{{$index}}">
- *             <option>phone</option>
+ *             <option>park</option>
  *             <option>email</option>
  *          </select>
  *          <input type="text" ng-model="contact.value" aria-labelledby="select_{{$index}}" />
@@ -26171,7 +26171,7 @@ var ngCloakDirective = ngDirective({
  *    function SettingsController1() {
  *      this.name = 'John Smith';
  *      this.contacts = [
- *        {type: 'phone', value: '408 555 1212'},
+ *        {type: 'park', value: '408 555 1212'},
  *        {type: 'email', value: 'john.smith@example.org'}
  *      ];
  *    }
@@ -26190,7 +26190,7 @@ var ngCloakDirective = ngDirective({
  *    };
  *
  *    SettingsController1.prototype.clearContact = function(contact) {
- *      contact.type = 'phone';
+ *      contact.type = 'park';
  *      contact.value = '';
  *    };
  *   </file>
@@ -26237,7 +26237,7 @@ var ngCloakDirective = ngDirective({
  *     <ul>
  *       <li ng-repeat="contact in contacts">
  *         <select ng-model="contact.type" id="select_{{$index}}">
- *            <option>phone</option>
+ *            <option>park</option>
  *            <option>email</option>
  *         </select>
  *         <input type="text" ng-model="contact.value" aria-labelledby="select_{{$index}}" />
@@ -26255,7 +26255,7 @@ var ngCloakDirective = ngDirective({
  *   function SettingsController2($scope) {
  *     $scope.name = 'John Smith';
  *     $scope.contacts = [
- *       {type:'phone', value:'408 555 1212'},
+ *       {type:'park', value:'408 555 1212'},
  *       {type:'email', value:'john.smith@example.org'}
  *     ];
  *
@@ -26273,7 +26273,7 @@ var ngCloakDirective = ngDirective({
  *     };
  *
  *     $scope.clearContact = function(contact) {
- *       contact.type = 'phone';
+ *       contact.type = 'park';
  *       contact.value = '';
  *     };
  *   }

@@ -1,10 +1,13 @@
 'use strict';
 
-// Define the `phonecatApp` module
-angular.module('phonecatApp', [
+// Define the `parkcatApp` module
+angular.module('parkcatApp', [
   'ngAnimate',
   'ngRoute',
   'core',
-  'phoneDetail',
-  'phoneList'
+  'parkDetail',
+  'parkList'
+  
 ]);
+
+//google maps doesn't work currently

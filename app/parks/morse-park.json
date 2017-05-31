@@ -1,0 +1,28 @@
+{
+
+    "peakhours": [
+        "12-6PM"
+    ], 
+    "rating": 
+        "Legendary", 
+
+    "hours": "7AM - 7PM", 
+
+    "description": "If you're looking for a challenging full-court run, come to Morse. ", 
+     
+    "id": "morse-park", 
+    "images": [
+        "img/parks/morse-park.0.jpg", 
+        "img/parks/hawkins-park.1.jpg"
+        
+    ], 
+    "name": "Morse Park", 
+
+    "address": " 5540 Bellaterra Dr, Elk Grove, CA 95757",
+    
+    "directions": {
+        "laguna": "From franklin and laguna blvd, make a right on franklin towards franklin high, left on elk grove blvd, right on fire poppy drive, left on Bellaterra, park will be on your right.", 
+        "eg": "From laguna west, continue on Elk Grove Blvd toward Raleys shopping center, right on fire poppy, left on Bellaterra and park will be on your right."
+    }
+}
+

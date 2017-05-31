@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar ntent-->
+
+      <p>
+        Find a park:
+        <input ng-model="$ctrl.query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+          <option value="runRating">runRating</option>
+        </select>
+      </p>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="parks">
+        <li ng-repeat="park in $ctrl.parks | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+            class="thumbnail park-list-item">
+          <a href="#!/parks/{{park.id}}" class="thumb">
+            <img ng-src="{{park.imageUrl}}" alt="{{park.name}}" />
+          </a>
+            <a href="#!/parks/{{park.id}}">{{park.name}}</a>
+          <p>{{park.snippet}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

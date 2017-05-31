@@ -1,18 +1,18 @@
 'use strict';
 
 angular.
-  module('phonecatApp').
+  module('parkcatApp').
   config(['$locationProvider' ,'$routeProvider',
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
       $routeProvider.
-        when('/phones', {
-          template: '<phone-list></phone-list>'
+        when('/parks', {
+          template: '<park-list></park-list>'
         }).
-        when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
+        when('/parks/:parkId', {
+          template: '<park-detail></park-detail>'
         }).
-        otherwise('/phones');
+        otherwise('/parks');
     }
   ]);
