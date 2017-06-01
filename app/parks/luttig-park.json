@@ -1,0 +1,27 @@
+{
+
+    "peakhours": [
+        "3-7PM"
+    ], 
+    "rating": 
+        "Legendary", 
+
+    "hours": "7AM - 7PM", 
+
+    "description": "Although commonly mistaken as a kiddy park, some epic battles have taken place on this concrete. Tie the laces and bring a ball.", 
+     
+    "id": "luttig-park", 
+    "images": [
+        "img/parks/luttig-park.0.jpg", 
+        "img/parks/luttig-park.1.jpg"
+        
+    ], 
+    "name": "Luttig Park", 
+
+    "address": " 9710 Toscano Drive, Elk Grove, CA 95757",
+    
+    "directions": {
+        "laguna": "insert google api here", 
+        "eg": "insert google api here"
+    }
+}

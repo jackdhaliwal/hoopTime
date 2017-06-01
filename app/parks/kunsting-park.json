@@ -1,0 +1,26 @@
+{
+
+    "peakhours": [
+        "12-9PM"
+    ], 
+    "rating": 
+        "insert rating via user here.", 
+
+    "hours": "7AM - 7PM", 
+
+    "description": "Looking for a game for yourself and the little ones? Come down to Kunsting. Two courts, all age groups and hooping..all day.", 
+     
+    "id": "kunsting-park", 
+    "images": [
+        "img/parks/kunsting-park.0.JPG", 
+        "img/parks/kunsting-park.1.JPG"
+        ],
+    "name": "Kunsting Park", 
+
+    "address": "10069 Wild Orchid Way, Elk Grove, CA 95757",
+    
+    "directions": {
+        "laguna": "insert google api here.", 
+        "eg": "insert google api here."
+    }
+}

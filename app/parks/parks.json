@@ -18,18 +18,19 @@
     }, 
     {
         "age": 2, 
-        "carrier": "AT&T", 
-        "id": "motorola-atrix-4g", 
-        "imageUrl": "img/parks/motorola-atrix-4g.0.jpg", 
-        "name": "MOTOROLA ATRIX\u2122 4G", 
-        "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartphone."
+        "runRating": 2,
+        "id": "luttig-park", 
+        "imageUrl": "img/parks/luttig-park.0.jpg", 
+        "name": "Luttig Park", 
+        "snippet": "Casa. De. Chaar."
     }, 
     {
         "age": 3, 
-        "id": "dell-streak-7", 
-        "imageUrl": "img/parks/dell-streak-7.0.jpg", 
-        "name": "Dell Streak 7", 
-        "snippet": "Introducing Dell\u2122 Streak 7. Share photos, videos and movies together. It\u2019s small enough to carry around, big enough to gather around."
+        "runRating": 3,
+        "id": "kunsting-park", 
+        "imageUrl": "img/parks/kunsting-park.0.jpg", 
+        "name": "Kunsting Park", 
+        "snippet": "Hot summers call for packed courts at Kunsting."
     }, 
     {
         "age": 4, 
