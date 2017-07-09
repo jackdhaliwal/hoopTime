@@ -1,6 +1,6 @@
 [
     {
-        "age": 0, 
+        "age": 3, 
         "runRating": 1,
         "id": "hawkins-park", 
         "imageUrl": "img/parks/hawkins-park.0.jpg", 
@@ -9,7 +9,7 @@
     
     }, 
     {
-        "age": 1, 
+        "age": 2, 
         "runRating": 0,
         "id": "morse-park", 
         "imageUrl": "img/parks/morse-park.0.jpg", 
@@ -17,7 +17,7 @@
         "snippet": "A full-court nestled on Bellaterra with competittion that has a history of no easy buckets"
     }, 
     {
-        "age": 2, 
+        "age": 1, 
         "runRating": 2,
         "id": "luttig-park", 
         "imageUrl": "img/parks/luttig-park.0.jpg", 
@@ -25,7 +25,7 @@
         "snippet": "Casa. De. Chaar."
     }, 
     {
-        "age": 3, 
+        "age": 0, 
         "runRating": 3,
         "id": "kunsting-park", 
         "imageUrl": "img/parks/kunsting-park.0.jpg", 
