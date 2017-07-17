@@ -1,0 +1,27 @@
+{
+
+    "peakhours": [
+        "5-8PM"
+    ], 
+    "rating": 
+        "Moderate", 
+
+    "hours": "7AM - 7PM", 
+
+    "description": "Description coming soon", 
+     
+    "id": "houde-park", 
+    "images": [
+        "", 
+        ""
+        
+    ], 
+    "name": "Houde Park", 
+
+    "address": "houde park",
+    
+    "directions": {
+        "laguna": "left on harbour point, pass KFC, right on bastona drive", 
+        "eg": "right on harbour point, pass Arco, left on bastona drive"
+    }
+}
