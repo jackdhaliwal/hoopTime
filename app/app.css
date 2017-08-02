@@ -91,3 +91,9 @@ h1 {
   font-size: 1.2em;
   font-weight: bold;
 }
+//Just giving our container Height and Width + A Red border
+#map-canvas{
+        height: 400px;
+        width:  700px;
+        border: 2px solid red;
+}

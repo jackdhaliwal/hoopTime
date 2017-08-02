@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="app.animations.css" />
 
+    <!-- Maps -->
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfjv1whrpWBHL2qUw1rz0JwSsabn5BsAk&callback=initMap"
+    type="text/javascript"></script>
+    <script src="app.js"></script>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -41,6 +46,10 @@
     <div class="view-container">
       <div ng-view class="view-frame"></div>
     </div>
+
+<!--Custom directive my-maps, we will get our map in here-->
+    <my-maps id="map-canvas"></my-maps>
+
 
   </body>
   

@@ -6,7 +6,7 @@ angular.module('parkcatApp', [
   'ngRoute',
   'core',
   'parkDetail',
-  'parkList'
+  'parkList',
   
 ]);
 

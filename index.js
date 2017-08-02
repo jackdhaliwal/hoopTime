@@ -14,11 +14,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-
-
 app.get('*', function(req, res){
-    res.render('index.html');
+    res.render('register.view.html');
 });
 
 app.listen(app.get('port'), function() {
 });
+

@@ -14,5 +14,7 @@ angular.
           template: '<park-detail></park-detail>'
         }).
         otherwise('/parks');
+    
     }
+
   ]);
