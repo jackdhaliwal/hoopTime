@@ -30,5 +30,13 @@
         "imageUrl": "", 
         "name": "Houde Park", 
         "snippet": "Details coming soon"
+    },
+    {
+        "age": 5, 
+        "runRating": 6,
+        "id": "backer-park", 
+        "imageUrl": "img/parks/backer-park.0.jpg", 
+        "name": "Backer Park", 
+        "snippet": "Details coming soon"
     }
 ]

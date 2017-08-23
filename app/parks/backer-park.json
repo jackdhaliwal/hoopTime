@@ -1,0 +1,26 @@
+{
+
+    "peakhours": [
+        "12-9PM"
+    ], 
+    "rating": 
+        "insert rating via user here.", 
+
+    "hours": "7AM - 7PM", 
+
+    "description": "These courts stay busy!", 
+     
+    "id": "backer-park", 
+    "images": [
+        "img/parks/backer-park.0.JPG", 
+        "img/parks/kunsting-park.1.JPG"
+        ],
+    "name": "Kunsting Park", 
+
+    "address": "10400 Stathos Dr, Elk Grove, CA 95757",
+    
+    "directions": {
+        "laguna": "insert google api here.", 
+        "eg": "insert google api here."
+    }
+}
